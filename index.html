@@ -6,7 +6,133 @@
         <title>Amal's Journal</title>
     </head>
     <body>
-        <h1>Amal's Journal Entries</h1>
+        <header>
+            <nav>
+                Page 1 | Page 2 | Page 3
+            </nav>
+            <h1><span>Amal's</span> Journal Entries</h1>
+            <hr>
+        </header>
+
+        <main>
+            <div>
+                <section>
+                    <h2>Thursday</h2>
+                    <h3><em>April 8, 2021</em></h3>
+                    <p>Today I had a meeting and two classes.</p>
+                    <p>A meme I was sent today:</p>
+                    <img src="images/meme.png" alt="college-tuition">
+                    <br>
+                </section>
+
+                <section>
+                    <h2>Friday</h2>
+                    <h3><i>April 9, 2021</i></h3>
+                    <p>Going into the weekend, I have to complete theses assignments:</p>
+                    <ol>
+                        <li><b>CSE 110</b>
+                            <ul>
+                                <li>Lab 2</li>
+                                <li>Meet with Group</li>
+                                <li> <a href="https://docs.google.com/document/d/1iwPd5zsXOphkc96zz4DPTE7imhM2NbPZMhyw1DvQ8bE/edit#">Link to Lab 2 FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>CSE 101</strong></li>
+                        <li><strong>ECE 65</strong>
+                            <ul>
+                                <li>HW 1</li>
+                                <li>Pre Lecture Video</li>
+                            </ul>
+                        </li>
+                        <li><strong>MUS 17</strong>
+                            <ul>
+                                <li>Reading</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <figure>
+                        <figcaption>Hook of new Lil Mosey Song I found today:</figcaption>
+                        <audio
+                            controls
+                            src="audio/jetski.mp3">
+                        </audio>
+                    </figure>
+                    <br>
+                </section>
+
+                <section>
+                    <h2>Saturday</h2>
+                    <h3><em>April 10, 2021</em></h3>
+
+                    <p>New Polo G Single Music Video Released today</p>
+                    <video controls>
+                        <source src="video/rapstar.mp4"
+                                type="video/mp4">
+                    </video>
+                    <details>
+                        <summary>More Information</summary>
+                        Music video for Polo G's newest single, "Rapstar"
+                    </details>
+                    
+                    
+                    <br>
+                </section>
+            </div>
+            <hr>
+            <h2>Create Entry: <button>Create</button></h2>
+            <form>
+                <label>Name: </label><input type="text">
+
+                <fieldset>
+                    <legend>Day</legend>
+                    <input type="radio"><label>Sunday</label>
+                    <input type="radio"><label>Monday</label>
+                    <input type="radio"><label>Tuesday</label>
+                    <input type="radio"><label>Wednesday</label>
+                    <input type="radio"><label>Thursday</label>
+                    <input type="radio"><label>Friday</label>
+                    <input type="radio"><label>Saturday</label>
+                    <br>
+                    <input type="date">
+                </fieldset>
+
+                <label>Journal Entry: </label>
+                <textarea>Start Typing Here</textarea>
+                
+                <br>
+
+                <label>Choose a media type: </label>
+                <select>
+                    <option>Please choose an option</option>
+                    <option>Image</option>
+                    <option>Audio</option>
+                    <option>Video</option>
+                </select>
+                <input type="submit" value="Insert">
+                
+                <br>
+
+                <label>Choose a media type: </label>
+                <input list="Media">
+                <datalist id="Media">
+                    <option>Image</option>
+                    <option>Audio</option>
+                    <option>Video</option>
+                </datalist>
+                <input type="submit" value="Insert">
+
+                <br>
+
+                <label>Include in Entry:</label> <br>
+                <input type="checkbox"><label>Ordered List</label> <br>
+                <input type="checkbox"><label>Unordered List</label>
+            </form>
+            <hr>
+        </main>
+        <footer>
+            <p>Author: Amal Kaduwela</p>
+            <p>Assignment: Lab 2</p>
+        </footer>
         
     </body>
 </html>
