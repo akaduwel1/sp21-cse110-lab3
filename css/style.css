@@ -1,0 +1,118 @@
+/**********TAG SELECTORS**********/
+h1 {
+    order: 2;
+    font-family: 'Courgette', cursive;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 0.1mm;
+    margin-right: 0.1mm;
+    margin-left: 0.1;
+    margin-bottom: 0.1mm;
+    display: inline-block;
+    width: 108%;
+    height: 50px;
+    grid-area: h2;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10pt;
+    color: rgb(235, 41, 19);
+    text-decoration: underline;
+    font-size: 1.3rem;
+    grid-area: h3;
+}
+
+ol {
+    color: #eb8fc4;
+    grid-area: ol;
+}
+
+figure {
+    grid-area: audio;
+}
+
+img {
+    position: relative;
+    padding: 0 70px 0 70px;
+    border-style: solid;
+    border-color: rgb(56, 221, 78);
+    border-width: 10px;
+    border-radius: 1px;
+}
+
+section {
+    width: 35%;
+    margin: auto;
+    padding-top: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+nav {
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    order: 1;
+}
+
+nav:hover {
+    color: springgreen;
+}
+
+nav:active {
+    color: teal;
+}
+
+p {
+    font-family: 'Antic Slab', serif;
+    display: block;
+    max-width: 20%;
+    min-width: 10%;
+    order: 3;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+    h2{
+        background-color: red;
+    }
+}
+
+/**********CLASS SELECTORS**********/
+
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h2 h2"
+    "h3 h3"
+    "paragraph paragraph"
+    "ol audio"
+}
+
+
+
+/**********ID SELECTORS**********/
+
+#grid-paragraph {
+    grid-area: paragraph;
+}
