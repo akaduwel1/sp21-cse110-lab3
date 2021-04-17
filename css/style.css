@@ -26,8 +26,12 @@ h3 {
     grid-area: h3;
 }
 
+button, label {
+    color:rgb(247, 255, 129)
+}
+
 ol {
-    color: #eb8fc4;
+    color: #e72d9a;
     grid-area: ol;
 }
 
@@ -89,12 +93,6 @@ header {
     align-items: center;
 }
 
-@media screen and (max-width: 1500px) {
-    h2{
-        background-color: red;
-    }
-}
-
 /**********CLASS SELECTORS**********/
 
 
@@ -115,4 +113,41 @@ header {
 
 #grid-paragraph {
     grid-area: paragraph;
+}
+
+/**********OTHER SELECTORS**********/
+
+@media screen and (max-width: 1500px) {
+    h2{
+        background-color: red;
+    }
+}
+
+a[href="https://docs.google.com/document/d/1iwPd5zsXOphkc96zz4DPTE7imhM2NbPZMhyw1DvQ8bE/edit#"] {
+    color: orange;
+}
+
+* {
+    background-color: pink;
+}
+
+div p {
+    background-color: rgb(192, 222, 248);
+}
+
+p > span {
+    text-decoration: underline;
+}
+
+fieldset ~ label {
+    background-color: chartreuse;
+}
+
+p:first-of-type + p {
+    background-color: rgb(78, 166, 207);
+  }
+
+.span.span-border {
+    border-style: dotted;
+    border-width: 3px;
 }
