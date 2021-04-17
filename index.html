@@ -3,7 +3,16 @@
     <head>
         <meta charset="utf-8" />
         <link rel="icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Courgette&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
         <title>Amal's Journal</title>
+        <style>
+            h2 {
+                background-color: greenyellow;
+            }
+        </style>
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -11,9 +20,9 @@
                 Page 1 | Page 2 | Page 3
             </nav>
             <h1><span>Amal's</span> Journal Entries</h1>
-            <hr>
+            <p>By Amal Kaduwela</p>
         </header>
-
+        <hr>
         <main>
             <div>
                 <section>
@@ -25,10 +34,10 @@
                     <br>
                 </section>
 
-                <section>
+                <section class="grid-section">
                     <h2>Friday</h2>
                     <h3><i>April 9, 2021</i></h3>
-                    <p>Going into the weekend, I have to complete theses assignments:</p>
+                    <p id="grid-paragraph">Going into the weekend, I have to complete theses assignments:</p>
                     <ol>
                         <li><b>CSE 110</b>
                             <ul>
@@ -60,12 +69,12 @@
                     <br>
                 </section>
 
-                <section>
+                <section style = "background-color: hsla(214, 48%, 53%, 0.61);">
                     <h2>Saturday</h2>
                     <h3><em>April 10, 2021</em></h3>
 
                     <p>New Polo G Single Music Video Released today</p>
-                    <video controls>
+                    <video controls width="600px">
                         <source src="video/rapstar.mp4"
                                 type="video/mp4">
                     </video>
