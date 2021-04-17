@@ -1,1 +1,1 @@
-Link to Part 1 Website: https://akaduwel1.github.io/Lab2/
+Link to Website: https://akaduwel1.github.io/sp21-cse110-lab3/
